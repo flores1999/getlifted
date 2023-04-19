@@ -1,0 +1,18 @@
+/*external style sheet*/ 
+
+body { 
+background-color: rgb(0, 0, 0);    
+}
+
+h1 {color: white; padding: 20px;}
+nav ul li {color: rgb(168, 0, 0); 
+list-style: none; display: inline-block;}
+
+p { padding: 15px; 
+    color:rgb(210, 210, 210)    
+}
+#deadlift {width: 49%; }
+
+section { color:white}
+
+h2 {color:rgb(168, 0, 0)}
