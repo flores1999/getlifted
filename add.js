@@ -33,10 +33,12 @@ function ratemysite(){
    let rating = prompt("rate the site 1-5");
    let max = 0
    let gotmax=false
-   if(rating>5){
+   while(rating>5 && rating<0){
     rating=prompt("rate the site 1-5");
+
     
-} else{
+}
+//  else{
        while (!gotmax ) {
         if(max===5||rating===0){
             gotmax=true 
@@ -47,6 +49,6 @@ function ratemysite(){
         document.write('<img class="loopimg" src="flex.jpg"alt="aremflex"/>');
        }
 
-   }
+//    }
 }
  
