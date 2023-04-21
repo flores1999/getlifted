@@ -2,15 +2,51 @@
 
 alert("welcome to a stroger life")
 
-const username = prompt("what is your name");
-console.log(username);
+function getname(){
+    const username = prompt("what is your name");
+    return username; 
 
-const input = prompt("what lift can we help you learn more about");
-console.log(input);
+}
+
+let theirname = getname();
 
 
-document.write("welcome! "+ username +"   We are here to help you on your journey. ");
-document.write("Lets see if we can help you lear more about "+ input + ".");
+console.log(theirname);
 
-alert ("remember to practice good form" );
+document.write("welcome! " + theirname + "   We are here to help you on your journey. "); 
 
+
+function lift(){
+   const lift = prompt("what lift can we help you learn more about");
+   return lift; 
+}
+
+let lifttype = lift();
+
+console.log(lifttype);
+
+document.write("lets see if we can help you lear more about  " + lifttype + ".");
+
+alert("remember to practice good form" );
+
+function ratemysite(){
+   let rating = prompt("rate the site 1-5");
+   let max = 0
+   let gotmax=false
+   if(rating>5){
+    rating=prompt("rate the site 1-5");
+    
+} else{
+       while (!gotmax ) {
+        if(max===5||rating===0){
+            gotmax=true 
+            break
+        }
+        max++
+        rating-- 
+        document.write('<img class="loopimg" src="flex.jpg"alt="aremflex"/>');
+       }
+
+   }
+}
+ 
